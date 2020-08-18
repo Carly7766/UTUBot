@@ -1,1 +1,1 @@
-utubot: python main.py
+utubot-run: python main.py
