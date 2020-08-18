@@ -1,8 +1,9 @@
 import discord
-from bin import UTUBot
+import os
+from src import UTUBot
 
-token = ''
-prefix = ''
+token = os.getenv('BOT_TOKEN')
+prefix = os.getenv('PREFIX')
 
 bot = UTUBot.UTUBot(prefix)
 
