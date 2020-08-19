@@ -1,11 +1,10 @@
 import discord
 from discord.ext import commands
-import traceback
-import logging
 
 COG_DIR = 'src.cogs.'
 
 INITIAL_COGS = [
+    'MusicCog',
     'CommandErrorHandler'
 ]
 
