@@ -4,8 +4,7 @@ from discord.ext import commands
 COG_DIR = 'src.cogs.'
 
 INITIAL_COGS = [
-    'MusicCog',
-    'What'
+    'music',
     'CommandErrorHandler'
 ]
 
