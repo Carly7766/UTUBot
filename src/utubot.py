@@ -5,7 +5,7 @@ COG_DIR = 'src.cogs.'
 
 INITIAL_COGS = [
     'music',
-    'CommandErrorHandler'
+    'error_handler'
 ]
 
 
