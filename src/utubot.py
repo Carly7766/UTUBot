@@ -4,8 +4,8 @@ from discord.ext import commands
 COG_DIR = 'src.cogs.'
 
 INITIAL_COGS = [
-    'music',
-    'error_handler'
+    'error_handler',
+    'extension_manager',
 ]
 
 
@@ -19,7 +19,6 @@ class UTUBot(commands.Bot):
     async def on_ready(self):
         game = discord.Game("UTUBot Ver:0.1a")
         await self.change_presence(status=discord.Status.online, activity=game)
-        self.description = "HogeHoges"
 
         print('-----')
         print(self.user.name)
