@@ -38,8 +38,8 @@ class ExtensionManager(commands.Cog):
     @checks.is_owner()
     async def reload(self, ctx, module: str):
         try:
-            self.bot.unload_extension(module)
-            self.bot.load_extension(module)
+            self.bot.unload_extension(self.COG_DIR + module)
+            self.bot.load_extension(self.COG_DIR + module)
         except Exception as e:
             await ctx.send('\N{NO ENTRY SIGN}')
             await ctx.send('{}: {}'.format(type(e).__name__, e))
